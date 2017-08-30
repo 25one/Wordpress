@@ -13,13 +13,10 @@ add_shortcode('button_cron', 'button_add');
 +на страницу в нужное место  [button_cron]
 
 2.тема/js/twenty-seconds.js :
-
 jQuery(document).ready(function() {
 jQuery("body").on("click", "#twenty_seconds", function() {cron.twentyseconds(this.getAttribute("name"));});
 });
-
 var cron={
-
    twentyseconds: function(patch_name) {
       var ajaxSettings = {
           method: "GET",
@@ -31,11 +28,9 @@ var cron={
       };
       jQuery.ajax(ajaxSettings);
    },
-
 }
 
 3.фоновый php-скрипт - тема/twentyseconds.php :
-
 <?php
 if(isset($_GET['twentyseconts'])) {
 sleep(20);
