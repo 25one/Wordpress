@@ -1,6 +1,6 @@
 <?php
-if(isset($_GET['twentyseconts-two'])) {
+if(isset($_GET['twentyseconts-three'])) {
 sleep(22);
-echo "Hello... It's been twenty-two seconds!";
+echo "Hello... It's been twenty-three seconds!";
 }
 ?>
